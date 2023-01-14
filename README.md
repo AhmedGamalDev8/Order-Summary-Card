@@ -1,2 +1,3 @@
-# Order-Summary-Card
-My 05 Frontend Development Project
+# Frontend Mentor - Order summary card
+
+## Welcome! 👋
