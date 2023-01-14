@@ -18,8 +18,11 @@ body {
   background-repeat: no-repeat;
   background-color: var(--color_01);
 }
-section.back-image img {
-  width: 100%;
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 ul {
   list-style: none;
@@ -31,24 +34,24 @@ ul li {
 span {
   display: block;
 }
-section.card {
+main.card {
   width: 400px;
   background-color: #fff;
   margin: 8vh auto;
   border-radius: 30px;
 }
-section.card img {
+main.card img {
   width: 100%;
   border-radius: 30px 30px  0 0;
   margin-bottom: 30px;
 }
-section.card h2 {
+main.card h1 {
   text-align: center;
   color: var(--color_05);
   font-weight: 700;
   margin-bottom: 20px;
 }
-section.card p {
+main.card p {
   text-align: center;
   padding: 0 30px;
   line-height: 1.5;
@@ -56,7 +59,7 @@ section.card p {
   color: var(--color_04);
   font-size: 16px;
 }
-section.card section.flex {
+main.card section.flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -68,33 +71,33 @@ section.card section.flex {
   background-color: var(--color_03);
   border-radius: 15px;
 }
-section.card section.flex figure {
+main.card section.flex figure {
   width: 50px;
   height: 50px;
   flex-basis: 15%;
   margin-right: 20px;
 }
-section.card section.flex figure img {
+main.card section.flex figure img {
   width: 100%;
   height: 100%;
   cursor: pointer;
 }
-section.card section.spans {
+main.card section.spans {
   flex-basis: 40%;
   margin-right: 20%;
 }
-section.card section.spans span {
+main.card section.spans span {
   line-height: 1.5;
   font-size: 16px;
 }
-section.card section.spans span:first-child {
+main.card section.spans span:first-child {
   color: var(--color_05);
   font-weight: 700;
 }
-section.card section.spans span:last-child {
+main.card section.spans span:last-child {
   color: var(--color_04)
 }
-section.card section.flex button {
+main.card section.flex button {
   outline: none;
   border: none;
   text-decoration: underline;
@@ -103,18 +106,18 @@ section.card section.flex button {
   transition: color .3s ease-in-out;
   background-color: transparent;
 }
-section.card section.flex button:hover {
+main.card section.flex button:hover {
   text-decoration: none;
   color: var(--color_05)
 }
-section.card section.payment,
-section.card section.order {
+main.card section.payment,
+main.card section.order {
   margin-top: 20px;
   text-align: center;
   width: 100%;
   margin-bottom: 20px;
 }
-section.card section.payment button {
+main.card section.payment button {
   width: 90%;
   padding: 15px 30px;
   margin: 0 auto;
@@ -126,10 +129,10 @@ section.card section.payment button {
   cursor: pointer;
   transition: box-shadow .3s linear;
 }
-section.card section.payment button:hover {
+main.card section.payment button:hover {
   box-shadow: 0px 10px 10px 3px var(--color_01);
 }
-section.card section.order button {
+main.card section.order button {
   border: none;
   outline: none;
   background-color: transparent;
@@ -137,6 +140,6 @@ section.card section.order button {
   transition: color ease-in-out .3s;
   margin-bottom: 20px;
 }
-section.card section.order button:hover {
+main.card section.order button:hover {
   color: var(--color_05);
 }
